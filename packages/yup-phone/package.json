@@ -1,6 +1,6 @@
 {
   "name": "@maru3l/yup-phone",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-beta.0",
   "description": "Plugin for Yup who validate phone number with libphonenumber-js from Google",
   "author": "Marc-Antoine Ruel <hello@marcantoineruel.com>",
   "main": "bundle.js",
