@@ -5,5 +5,10 @@
   "npmClient": "yarn",
   "version": "independent",
   "useWorkspaces": true,
-  "ignoreChanges": ["**/*.md", "yarn.lock"]
+  "ignoreChanges": ["**/*.md", "yarn.lock"],
+  "command": {
+    "version": {
+      "message": ":bookmark: Release %s"
+    }
+  }
 }
