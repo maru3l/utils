@@ -1,5 +1,5 @@
 {
-  "name": "@maru3l/yup-phone",
+  "name": "@wldlab/yup-phone",
   "version": "1.0.0-beta.0",
   "description": "Plugin for Yup who validate phone number with libphonenumber-js from Google",
   "author": "Marc-Antoine Ruel <hello@marcantoineruel.com>",
@@ -34,5 +34,6 @@
     "libphonenumber-js": "^1.7.53",
     "rollup": "^2.18.0",
     "yup": "^0.29.1"
-  }
+  },
+  "gitHead": "5e36b6de8b52b4d6146b266edcd330d74a75693a"
 }
