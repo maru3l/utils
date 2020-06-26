@@ -1,0 +1,40 @@
+{
+  "name": "@maru3l/utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:maru3l/utils.git",
+  "author": "Marc-Antoine Ruel <hello@marcantoineruel.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-emoji"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "commitizen": "^4.1.2",
+    "commitlint-config-gitmoji": "^1.0.1",
+    "cz-emoji": "^1.2.1",
+    "eslint": "7.2.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "[[ -n $HUSKY_BYPASS ]] || commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
